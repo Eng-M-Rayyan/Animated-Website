@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <img src="images/mosque.jpg" class="mosque" alt="">
+        <header>
+            <a href="#" class="logo">Ramadan</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1" class="active">Home</a></li>
+                <li><a href="" style="--i:2">About</a></li>
+                <li><a href="" style="--i:3">Calendar</a></li>
+                <li><a href="" style="--i:4">Blog</a></li>
+                <li><a href="" style="--i:5">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text-box">
+                <h2>Happy Ramadan Kareem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reiciendis totam veniam enim facere atque laborum dicta incidunt. Itaque odio minus praesentium nobis, natus nulla cumque optio asperiores quas deserunt!</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="social-media">
+            <li>
+                <a href="#" style="--i:11"><img src="images/facebook.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="--i:12"><img src="images/twitter.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="--i:13"><img src="images/instagram.png" alt=""></a>
+            </li>
+        </div>
+    </section>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
